@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alexofechoes_brain_games"
-version = "0.2.1"
+version = "0.3.0"
 description = ""
 authors = ["Alexander Bukharin <alexawm182@gmail.com>"]
 packages = [
