@@ -14,3 +14,8 @@ def ask_name():
 def greet_user(name):
     """Greet user."""
     return 'Hello, {name}!'.format(name=name)
+
+
+def ask(message):
+    """Ask question and return answer."""
+    return prompt.string(message)
