@@ -6,3 +6,15 @@
 
 ## Run brain-even game
 ```>>> brain-even```
+
+## Run brain-calc game
+```>>> brain-calc```
+
+## Run brain-gcd game
+```>>> brain-gcd```
+
+## Run brain-progression game
+```>>> brain-progression```
+
+## Run brain-prime game
+```>>> brain-prime```
