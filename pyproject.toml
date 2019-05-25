@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alexofechoes_brain_games"
-version = "0.4.0"
+version = "0.5.0"
 description = ""
 authors = ["Alexander Bukharin <alexawm182@gmail.com>"]
 packages = [
@@ -17,7 +17,7 @@ black = {version = "^18.3-alpha.0",allows-prereleases = true}
 wemake-python-styleguide = "^0.8.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 brain-even = "brain_games.scripts.brain_even:main"
 
 [build-system]

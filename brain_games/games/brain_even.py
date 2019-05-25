@@ -1,30 +1,21 @@
 # -*- coding:utf-8 -*-
 
 """Brain even game functions."""
-import os
+import random
 
 
-def check_answer(number, user_answer):
-    """Check user answer."""
+def generate_question():
+    """Create game question."""
+    number = _create_random_number()
+    question = '{num}'.format(num=number)
     expected_answer = _get_expected_answer(number)
-    if (user_answer == expected_answer):
-        return (True, _correct_answer_message())
-    return (False, _incorrect_answer_message(expected_answer, user_answer))
+    return question, expected_answer
 
 
-def create_number():
+def _create_random_number():
     """Create random number."""
-    return int.from_bytes(os.urandom(1), byteorder='big')
+    return random.randrange(1, 100)
 
 
 def _get_expected_answer(number):
     return 'yes' if number % 2 == 0 else 'no'
-
-
-def _correct_answer_message():
-    return 'Correct'
-
-
-def _incorrect_answer_message(correct_answer, user_answer):
-    res = "'{user_answer}' is wrong answer ;(. Correct answer was '{correct}'."
-    return res.format(user_answer=user_answer, correct=correct_answer)
