@@ -1,23 +1,15 @@
 # -*- coding:utf-8 -*-
 
 """Brain even game functions."""
+
 import random
 
-GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def generate_question():
     """Create game question."""
-    number = _create_random_number()
-    question = '{num}'.format(num=number)
-    expected_answer = _get_expected_answer(number)
+    number = random.randrange(1, 100)
+    question = str(number)
+    expected_answer = 'yes' if not number % 2 else 'no'
     return question, expected_answer
-
-
-def _create_random_number():
-    """Create random number."""
-    return random.randrange(1, 100)
-
-
-def _get_expected_answer(number):
-    return 'yes' if number % 2 == 0 else 'no'

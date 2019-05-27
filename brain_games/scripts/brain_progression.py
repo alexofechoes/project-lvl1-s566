@@ -1,16 +1,15 @@
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 """Script for run cli."""
-from brain_games.games.brain_progression import (
-    GAME_DESCRIPTION,
-    generate_question,
-)
-from brain_games.scripts.brain_games import main as game
+
+from brain_games.games import brain_progression
+from brain_games.scripts import brain_games
 
 
 def main():
     """Run game."""
-    game(GAME_DESCRIPTION, generate_question)
+    brain_games.main(brain_progression)
 
 
 if __name__ == '__main__':

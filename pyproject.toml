@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alexofechoes_brain_games"
-version = "0.8.1"
+version = "0.8.2"
 description = "Brain games - hexlet first project"
 authors = ["Alexander Bukharin <alexawm182@gmail.com>"]
 packages = [
@@ -16,13 +16,13 @@ python = "^3.6"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.7"
 black = {version = "^18.3-alpha.0",allows-prereleases = true}
 wemake-python-styleguide = "^0.8.1"
 
 [tool.poetry.scripts]
-brain-calc = "brain_games.scripts.brain_calc:main"
+brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"

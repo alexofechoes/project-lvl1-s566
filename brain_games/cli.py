@@ -2,20 +2,16 @@
 
 """Functions for cli."""
 
+import sys
+
 import prompt
 
 
-def ask_name():
-    """Ask user name."""
-    name = prompt.string('May I have your name? ')
-    return name
-
-
-def greet_user(name):
-    """Greet user."""
-    return 'Hello, {name}!'.format(name=name)
-
-
-def ask(message):
-    """Ask question and return answer."""
+def reader(message):
+    """Ask message"""
     return prompt.string(message)
+
+
+def write(message):
+    """Write message in stdout."""
+    sys.stdout.write(message + '\n')
