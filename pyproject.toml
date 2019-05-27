@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "alexofechoes_brain_games"
-version = "0.8.0"
-description = ""
+version = "0.8.1"
+description = "Brain games - hexlet first project"
 authors = ["Alexander Bukharin <alexawm182@gmail.com>"]
 packages = [
     { include = "brain_games" },
+]
+repository = "https://github.com/alexofechoes/project-lvl1-s566"
+classifiers = [
+    "Topic :: Games/Entertainment"
 ]
 
 [tool.poetry.dependencies]
