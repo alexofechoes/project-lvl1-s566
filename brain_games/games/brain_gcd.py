@@ -4,6 +4,8 @@
 import random
 from fractions import gcd
 
+GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
 
 def generate_question():
     """Create game question."""

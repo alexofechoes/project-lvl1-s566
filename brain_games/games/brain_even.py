@@ -3,6 +3,8 @@
 """Brain even game functions."""
 import random
 
+GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+
 
 def generate_question():
     """Create game question."""

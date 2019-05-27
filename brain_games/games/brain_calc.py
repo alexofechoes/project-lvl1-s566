@@ -3,6 +3,8 @@
 """Brain calc game functions."""
 import random
 
+GAME_DESCRIPTION = 'What is the result of the expression?'
+
 operations = {
     '+': lambda num1, num2: num1 + num2,
     '-': lambda num1, num2: num1 - num2,
