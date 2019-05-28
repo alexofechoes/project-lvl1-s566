@@ -12,6 +12,6 @@ def reader(message):
     return prompt.string(message)
 
 
-def write(message):
+def writer(message):
     """Write message in stdout."""
     sys.stdout.write(message + '\n')
