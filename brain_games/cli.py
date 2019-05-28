@@ -8,7 +8,7 @@ import prompt
 
 
 def reader(message):
-    """Ask message"""
+    """Ask message."""
     return prompt.string(message)
 
 
