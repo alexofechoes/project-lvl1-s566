@@ -4,7 +4,7 @@
 ## Installation
 ```$ pip3 install --user --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple alexofechoes_brain_games```  
 
-[![asciicast](https://asciinema.org/a/0RfPfoPuuHoYrMZ9hZBPUZaSP.svg)](https://asciinema.org/a/0RfPfoPuuHoYrMZ9hZBPUZaSP)
+[![asciicast](https://asciinema.org/a/N6leddB5fRY1W00LLCy6Poomn.svg)](https://asciinema.org/a/N6leddB5fRY1W00LLCy6Poomn)
 
 ## Brain-even game
 Answer "yes" if number even otherwise answer "no".
