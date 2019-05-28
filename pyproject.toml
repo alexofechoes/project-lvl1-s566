@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "alexofechoes_brain_games"
-version = "0.8.2"
+version = "0.8.3"
 description = "Brain games - hexlet first project"
 authors = ["Alexander Bukharin <alexawm182@gmail.com>"]
 packages = [

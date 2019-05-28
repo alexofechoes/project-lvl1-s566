@@ -7,11 +7,11 @@ import sys
 import prompt
 
 
-def reader(message):
-    """Ask message."""
+def ask(message):
+    """Read message."""
     return prompt.string(message)
 
 
-def writer(message):
+def say(message=''):
     """Write message in stdout."""
     sys.stdout.write(message + '\n')

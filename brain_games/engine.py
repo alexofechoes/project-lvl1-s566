@@ -1,27 +1,44 @@
 # -*- coding:utf-8 -*-
 
-"""Common functions for games."""
+"""Engine game."""
 
 CORRECT_ANSWER_MESSAGE = 'Correct'
 GAME_STEP_COUNT = 3
 
 
-def run_game(reader, writer, generate_question, user_name):
+def run(ask, say, game=None):
+    """Run game."""
+    say('Welcome to the Brain Games!')
+
+    if game:
+        say(game.DESCRIPTION)
+    say()
+
+    user_name = ask('May I have your name? ')
+    say('Hello, {name}!'.format(name=user_name))
+    say()
+
+    if game:
+        _game_proccess(ask, say, game.generate_question, user_name)
+
+
+def _game_proccess(ask, say, generate_question, user_name):
     """Game proccess."""
     correct_answers_count = 0
 
     while correct_answers_count < GAME_STEP_COUNT:
         question, expected_answer = generate_question()
-        writer('Question: {question}'.format(question=question))
+        say('Question: {question}'.format(question=question))
 
-        user_answer = reader('Your answer: ')
+        user_answer = ask('Your answer: ')
         is_correct, message = _check_answer(expected_answer, user_answer)
-        writer(message)
+        say(message)
 
         if not is_correct:
-            return "Let's try again, {user_name}!".format(user_name=user_name)
+            say("Let's try again, {user_name}!".format(user_name=user_name))
+            return
         correct_answers_count += 1
-    return 'Congratulations, {user_name}!'.format(user_name=user_name)
+    say('Congratulations, {user_name}!'.format(user_name=user_name))
 
 
 def _check_answer(expected_answer, user_answer):
